@@ -1,0 +1,13 @@
+.container {
+  width: 72%;
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 190px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #eeac26;
+}

@@ -1,0 +1,19 @@
+.header {
+  background-color: #272525;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 15px #fff;
+  height: 10vh;
+}
+.header h2 {
+  color: #eeac26;
+}
+.header h3 {
+  color: #eeac26;
+  cursor: pointer;
+}
+.body {
+  text-align: center;
+  background-color: #3e3939;
+  height: 90vh;
+}

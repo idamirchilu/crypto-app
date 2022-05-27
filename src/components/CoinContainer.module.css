@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c1b1b;
+  border-bottom: 1px solid rgb(154, 140, 140);
+  padding: 7px;
+}
+.coin {
+  display: flex;
+  cursor: pointer;
+  margin-right: 50px;
+}

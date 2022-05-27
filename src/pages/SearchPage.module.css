@@ -1,0 +1,44 @@
+.header {
+  background-color: #272525;
+  display: flex;
+  justify-content: space-around;
+}
+.header h2 {
+  color: #eeac26;
+}
+.header h3 {
+  color: #eeac26;
+  cursor: pointer;
+}
+.main {
+  background-image: url("../assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+}
+.main h1 {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 40px;
+}
+.main p {
+  color: #959292;
+  cursor: pointer;
+}
+.search {
+  background-color: #272525;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+.search input {
+  background: content-box;
+  border: solid 1px #959292;
+  padding: 12px;
+  width: 70%;
+}
