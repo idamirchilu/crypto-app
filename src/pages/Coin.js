@@ -4,9 +4,11 @@ import classes from "./Coin.module.css";
 import numFormatter from "../Functions/numFormater";
 
 export default function Coin() {
+  // گرفتن کوین ای دی از یو ار ال با استفاده از این هوک
   const { coinId } = useParams();
   const [coinData, setCoinData] = useState(null);
 
+  // گرفتن اطلاعات یه تک کوین با دادن ای دی ان به ای پی زیر و ذخیره اطلاعات در کوین دیتا
   useEffect(() => {
     const fetchData = async () => {
       try {

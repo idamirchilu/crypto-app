@@ -8,6 +8,7 @@ export default function SearchPage() {
   const [searchInput, setSearchInput] = useState("");
   const dispatch = useDispatch();
 
+  // صدا زدن تابع سرچ از ریداکس
   useEffect(() => {
     dispatch(coinActions.searchCoin(searchInput));
     console.log(searchInput.length);

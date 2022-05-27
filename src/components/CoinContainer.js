@@ -4,11 +4,12 @@ import numFormater from "../Functions/numFormater";
 
 export default function CoinContainer({ data }) {
   const navigate = useNavigate();
-
+  // نویگیت شدن به پیج تک کوین
   function navigateToCoinHandler() {
     navigate(`/search/${data.id}`);
   }
 
+  // عوض شدن رنگ تغییرات قیمت
   const changeColor = data.price_change_percentage_24h > 0 ? "green" : "red";
 
   return (

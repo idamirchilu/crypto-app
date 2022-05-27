@@ -23,18 +23,37 @@ export default function CoinList() {
     })();
   }, [dispatch]);
 
-  return (
-    <div className={classes.container}>
-      <div className={classes.header}>
-        <h4>Coin</h4>
-        <h4>price</h4>
-        <h4>24h changes</h4>
-        <h4>Market Cap</h4>
-      </div>
+  if (coinState.onSearch) {
+    return (
+      <div className={classes.container}>
+        <div className={classes.header}>
+          <h4>Coin</h4>
+          <h4>price</h4>
+          <h4>24h changes</h4>
+          <h4>Market Cap</h4>
+        </div>
 
-      {coinState.coinData.map((item) => (
-        <CoinContainer key={item.symbol} data={item} />
-      ))}
-    </div>
-  );
+        {coinState.searchCoinData.map((item) => (
+          <CoinContainer key={item.symbol} data={item} />
+        ))}
+      </div>
+    );
+  }
+
+  if (!coinState.onSearch) {
+    return (
+      <div className={classes.container}>
+        <div className={classes.header}>
+          <h4>Coin</h4>
+          <h4>price</h4>
+          <h4>24h changes</h4>
+          <h4>Market Cap</h4>
+        </div>
+
+        {coinState.coinData.map((item) => (
+          <CoinContainer key={item.symbol} data={item} />
+        ))}
+      </div>
+    );
+  }
 }

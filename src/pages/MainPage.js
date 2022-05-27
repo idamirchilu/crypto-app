@@ -1,9 +1,7 @@
 import classes from "./MainPage.module.css";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 export default function MainPage() {
-  const themeState = useSelector((state) => state.theme);
   const navigate = useNavigate();
 
   return (
